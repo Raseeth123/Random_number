@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+
+        .heading{
+            text-align: center;
+        }
+
+        .cot{
+            width: 300px;
+            height: 300px;
+            margin: 150px auto;
+        }
+
+        .but{
+            margin-top: 20px;
+            margin-left: 100px;
+            padding: 15px;
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        .val{
+            margin-top: 10px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="heading">Random Number Generator</h1>
+    <div class="cot">
+        <h1 class="val" id="val">0</h1>
+        <button class="but" id="but">Generate</button>
+    </div>
+    <script>
+        let num
+        document.getElementById("but").onclick=function(){
+            num=Math.random()*1000
+            document.getElementById("val").textContent=Math.floor(num)
+        }
+    </script>
+</body>
+</html>
+
+
